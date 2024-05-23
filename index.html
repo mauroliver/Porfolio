@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Web</title>
+    <script src="https://kit.fontawesome.com/583386f094.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="index.html"><i class="fa-brands fa-phoenix-squadron fa-flip"></i></a>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#acerca-de">Acerca de mí</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="seccion-principal">
+        <section class="seccion-1" id="acerca-de">
+            <div class="acerca-de">
+                <h2>Acerca de Mí</h2>
+                <p>Bienvenidos a mi Web</p>
+                <p>Me llamo Mauricio García, nací en Mendoza y vivo en Guaymallén.</p>   
+                <p>Me gusta el chocolate y el asado, nadar, andar en bici y volar mi dron.</p>   
+            </div>
+            <div class="acerca-imagen">
+                <img src="vanimau.jpg" alt="Foto de Mauricio García" width="350" height="350">
+            </div>
+        </section>
+        <section class="seccion-2">
+            <img src="DJI_0125.JPG" width="100%" height="900" alt="Imagen del río">
+        </section>
+        <section class="seccion-3" id="trabajos">
+            <img src="Potrerillos.jpg" width="600" height="500" alt="Imagen de Potrerillos">
+            <video width="750" height="550" controls>
+                <source src="Videodronpresent.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <img src="Fuente Plaza Independencia.jpg" width="600" height="500" alt="Fuente en la Plaza Independencia">
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://www.youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <button id="btn-generar">Generar Frase Aleatoria</button>
+        <p id="frase"></p>
+    </footer>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
+jfg

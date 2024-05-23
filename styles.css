@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 10%;
+    background-color: rgb(209, 226, 220);
+    font-family: Arial, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(2, 31, 31);
+    padding: 1em;
+}
+
+header a i {
+    color: red;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.2em;
+    color: rgb(30, 144, 179);
+}
+
+main .seccion-1 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    
+}
+.vanimau.jpg {
+    width: 300px; /* Ancho de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border: 5px solid #ddd; /* Borde */
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease; /* Transiciones */
+}
+
+.imagen-estilo:hover {
+    transform: scale(1.1); /* Escalado al pasar el ratón */
+    filter: grayscale(0); /* Filtro de escala de grises */
+    opacity:
+}
+
+.seccion-2, .seccion-3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.seccion-3 {
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(197, 188, 53, 0.863);
+    width: 100%;
+    padding: 1em 0;
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        background-color: coral;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .seccion-1, .seccion-2, .seccion-3 {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .checkbtn {
+        display: block;
+    }
+}
+.frace {
+    color: chocolate;
+    display: flex; left: auto;
+}
+
+#btn-generar {
+    margin-top: 1em;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-generar:hover {
+    background-color: #e64a19;
+}
+
+#frase {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    
+    header nav .checkbtn {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    header nav input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+}
